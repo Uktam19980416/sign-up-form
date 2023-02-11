@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Sign Up Form</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="left__side">
+      <div class="logo__and__name">
+        <img 
+          class="logo"
+          src="./logo.png" 
+          alt="logo"
+        >
+        <div class="logo__name">Fan Club</div>
+      </div>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="made__by">
+            Made By <i class="fa fa-brands fa-github-alt"></i>
+            <a class="made__by__name" href="https://github.com/Uktam19980416">Uktamjon</a>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="right__side">
+      <p class="right__info">
+        This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!<br>
+        Sign up <em>now</em> to get started.
+      </p>
+      <p class="sign__up">You <em>know</em> you want to.</p>
+      <h2>Let's do this!</h2>
+      <form onsubmit="return false;">
+        <div class="card">
+          <div class="card__body">
+            <div class="input__left">
+              <label for="firstName">First name</label><br>
+              <input 
+                type="text" 
+                id="firstName" 
+                required
+              >
+              <span></span>
+              <br>
+              <label for="email">Email</label><br>
+              <input 
+                type="email" 
+                id="email" 
+                required
+              >
+              <span></span>
+              <br>
+              <label for="password">Password</label><br>
+              <input 
+                type="password" 
+                id="password" 
+                required
+              >
+              <span></span>
+              <br>
+            </div>
+            <div class="input__right">
+              <label for="lastName">Last name</label><br>
+              <input 
+                type="text" 
+                id="lastName" 
+                required
+              >
+              <span></span>
+              <br>
+              <label for="phone">Phone number</label><br>
+              <input 
+                type="phone" 
+                id="email"
+                pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
+                placeholder="+99(99)9999-9999"
+                required
+              >
+              <span></span>
+              <br>
+              <label for="confirmPassword">Confirm password</label><br>
+              <input 
+                type="password" 
+                id="confirmPassword" 
+                required
+              >
+              <span></span>
+              <br>
+            </div>
+          </div>
+        </div>
+        <button class="btn" type="submit">Create Account</button>
+        <p class="account__login">
+          Already have account? 
+          <a class="login" href="">Log in</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
